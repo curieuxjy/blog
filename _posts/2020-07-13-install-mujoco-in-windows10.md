@@ -15,7 +15,7 @@ Reinforcement learning에서 많이 쓰이는 시뮬레이션 Mujoco Window10에
 
 3. 다시 [License](https://www.roboti.us/license.html)로 가서 Account number와 Computer Id를 입력한다.
 
-    ![license_img](imgs/img2.JPG)
+    ![license_img](./imgs/img2.JPG)
 
 4. 다시 이메일로 MuJoCo Pro Personal Activation Key(mjkey.txt)를 받는다.
 
@@ -23,7 +23,7 @@ Reinforcement learning에서 많이 쓰이는 시뮬레이션 Mujoco Window10에
 
 6. [Products](https://www.roboti.us/index.html)에서 `mjpro150 win64`을 다운받아 `.mujoco`에 압축을 풀어준다.(`C:\Users\사용자명\.mujoco\mjpro150`)
 
-    ![product_img](imgs/img3.JPG)
+    ![product_img](./imgs/img3.JPG)
 
 6. 다운받은 mjkey.txt 파일을 `C:\Users\사용자명\.mujoco`와 `C:\Users\사용자명\.mujoco\mjpro150\bin` 에 옮긴다.
 
@@ -31,7 +31,7 @@ Reinforcement learning에서 많이 쓰이는 시뮬레이션 Mujoco Window10에
 
 8. Humanoid Simulation 창이 나오면 성공이다.
 
-    ![humanoid_gif](imgs/gif2.gif)
+    ![humanoid_gif](./imgs/gif2.gif)
 
 # Mujoco-py
 
@@ -51,7 +51,7 @@ Reinforcement learning에서 많이 쓰이는 시뮬레이션 Mujoco Window10에
     
     처음에 실행화면이 뜨는 시간이 오래걸리지만 이후에는 실행창이 빨리 나왔다.
     
-    ![body_gif](imgs/gif1.gif)
+    ![body_gif](./imgs/gif1.gif)
 
 
 ### Reference

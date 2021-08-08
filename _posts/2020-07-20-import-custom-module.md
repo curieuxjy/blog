@@ -10,8 +10,8 @@ Python: custom module을 불러오는 방법
 
 ## Structure
 
-![folder_img](imgs/img4.JPG)
-![xmind_img](imgs/img5.JPG)
+![folder_img](./imgs/img4.JPG)
+![xmind_img](./imgs/img5.JPG)
 
 `gym_foo` folder에 반드시 `__init__.py`를 만들어야 한다.
 

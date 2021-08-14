@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-01-02T00:00:00-06:00" />
 <script type="application/ld+json">
-{"datePublished":"2021-01-02T00:00:00-06:00","url":"https://curieuxjy.github.io/blog/gnn/2021/01/02/gnn-introduction.html","@type":"BlogPosting","dateModified":"2021-01-02T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://curieuxjy.github.io/blog/gnn/2021/01/02/gnn-introduction.html"},"headline":"Hello GNN","description":"GNN introduction","@context":"https://schema.org"}</script>
+{"description":"GNN introduction","url":"https://curieuxjy.github.io/blog/gnn/2021/01/02/gnn-introduction.html","@type":"BlogPosting","headline":"Hello GNN","dateModified":"2021-01-02T00:00:00-06:00","datePublished":"2021-01-02T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://curieuxjy.github.io/blog/gnn/2021/01/02/gnn-introduction.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://curieuxjy.github.io/blog/feed.xml" title="Jungyeon" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -90,170 +90,247 @@ window.onload = wrap_img;
       </p>
     
 
-    </header>
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/curieuxjy/blog/tree/master/_notebooks/2021-01-02-gnn-introduction.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/curieuxjy/blog/master?filepath=_notebooks%2F2021-01-02-gnn-introduction.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/curieuxjy/blog/blob/master/_notebooks/2021-01-02-gnn-introduction.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#materials">Materials</a>
+<li class="toc-entry toc-h2"><a href="#Materials">Materials </a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#tutorials--workshops">Tutorials &amp; Workshops</a></li>
-<li class="toc-entry toc-h3"><a href="#papers--survey">Papers &amp; Survey</a></li>
-<li class="toc-entry toc-h3"><a href="#videos">Videos</a>
+<li class="toc-entry toc-h3"><a href="#Tutorials-&-Workshops">Tutorials &amp; Workshops </a></li>
+<li class="toc-entry toc-h3"><a href="#Papers-&-Survey">Papers &amp; Survey </a></li>
+<li class="toc-entry toc-h3"><a href="#Videos">Videos </a>
 <ul>
-<li class="toc-entry toc-h4"><a href="#an-introduction-to-graph-neural-networks-models-and-applications">An Introduction to Graph Neural Networks: Models and Applications</a></li>
-<li class="toc-entry toc-h4"><a href="#graph-convolutional-networks-using-only-numpy">Graph Convolutional Networks using only NumPy</a></li>
-<li class="toc-entry toc-h4"><a href="#geometric-deep-learning-on-graphs-and-manifolds">Geometric Deep Learning on Graphs and Manifolds</a></li>
-<li class="toc-entry toc-h4"><a href="#graph-nets-the-next-generation">Graph Nets: The Next Generation</a></li>
-<li class="toc-entry toc-h4"><a href="#recent-developments-of-graph-network-architectures">Recent Developments of Graph Network Architectures</a></li>
-<li class="toc-entry toc-h4"><a href="#deep-learning-on-graphs-successes-challenges-and-next-steps">Deep learning on graphs: successes, challenges, and next steps</a></li>
-<li class="toc-entry toc-h4"><a href="#graph-representation-learning-for-algorithmic-reasoning">Graph Representation Learning for Algorithmic Reasoning</a></li>
-<li class="toc-entry toc-h4"><a href="#how-uber-uses-graph-neural-networks-to-recommend-you-food">How Uber uses Graph Neural Networks to recommend you food</a></li>
+<li class="toc-entry toc-h4"><a href="#An-Introduction-to-Graph-Neural-Networks:-Models-and-Applications">An Introduction to Graph Neural Networks: Models and Applications </a></li>
+<li class="toc-entry toc-h4"><a href="#Graph-Convolutional-Networks-using-only-NumPy">Graph Convolutional Networks using only NumPy </a></li>
+<li class="toc-entry toc-h4"><a href="#Geometric-Deep-Learning-on-Graphs-and-Manifolds">Geometric Deep Learning on Graphs and Manifolds </a></li>
+<li class="toc-entry toc-h4"><a href="#Graph-Nets:-The-Next-Generation">Graph Nets: The Next Generation </a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul><p>GNN에 관심을 가지게 된 계기는 <a href="https://cdfg.mit.edu/publications/robogrammar-graph-grammar-for-terrain-optimized-robot-design">RoboGrammar</a>라는 <a href="https://cdfg.mit.edu/assets/files/robogrammar.pdf">paper</a>였다. 예전부터 하고 싶었던 Robot design 아이디어를 GNN을 가지고 실현시킨 것이 너무 신기해서 공부해보고 싶었다. 이번 포스팅에서는 GNN과 첫만남인 만큼 공부할 자료들을 정리해보려 한다.</p>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-01-02-gnn-introduction.ipynb
+-->
 
-<h2 id="materials">
-<a class="anchor" href="#materials" aria-hidden="true"><span class="octicon octicon-link"></span></a>Materials</h2>
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>GNN에 관심을 가지게 된 계기는 <a href="https://cdfg.mit.edu/publications/robogrammar-graph-grammar-for-terrain-optimized-robot-design">RoboGrammar</a>라는 <a href="https://cdfg.mit.edu/assets/files/robogrammar.pdf">paper</a>였다. 예전부터 하고 싶었던 Robot design 아이디어를 GNN을 가지고 실현시킨 것이 너무 신기해서 공부해보고 싶었다. 이번 포스팅에서는 GNN과 첫만남인 만큼 공부할 자료들을 정리해보려 한다.</p>
+<h2 id="Materials">
+<a class="anchor" href="#Materials" aria-hidden="true"><span class="octicon octicon-link"></span></a>Materials<a class="anchor-link" href="#Materials"> </a>
+</h2>
 <ul>
-  <li>
-    <p><a href="https://tobigs.gitbook.io/tobigs-graph-study">Tobigs Graph Study</a></p>
-  </li>
-  <li>
-    <p><a href="http://web.stanford.edu/class/cs224w">CS224W: Machine Learning with Graphs</a> / <a href="https://youtube.com/playlist?list=PL-Y8zK4dwCrQyASidb2mjj_itW2-YYx6-">Videos</a></p>
-  </li>
-  <li>
-    <p><a href="https://gnn.seas.upenn.edu/">Graph Neural Networks - Penn Engineering</a></p>
-  </li>
-  <li>
-    <p><a href="https://github.com/microsoft/tf-gnn-samples">TF Graph Neural Network Samples</a></p>
-  </li>
-  <li>
-    <p><a href="https://github.com/microsoft/tf2-gnn">Graph Neural Networks in TF2</a></p>
-  </li>
-  <li>
-    <p><a href="https://github.com/dsgiitr/graph_nets">Graph Representation Learning(Pytorch)</a></p>
-  </li>
-  <li>
-    <p><a href="https://towardsdatascience.com/a-gentle-introduction-to-graph-neural-network-basics-deepwalk-and-graphsage-db5d540d50b3">A Gentle Introduction to Graph Neural Networks (Basics, DeepWalk, and GraphSage)</a></p>
-  </li>
-  <li>
-    <p><a href="https://slideslive.com/38917604">Invariant Graph Networks</a> :  invariance, equivariance, k-WL GNN 관련 주제</p>
-  </li>
-  <li>
-    <p><a href="https://ai.googleblog.com/2020/12/end-to-end-transferable-deep-rl-for.html">End-to-End, Transferable Deep RL for Graph Optimization</a> : RL + GNN</p>
-  </li>
+<li>
+<p><a href="https://tobigs.gitbook.io/tobigs-graph-study">Tobigs Graph Study</a></p>
+</li>
+<li>
+<p><a href="http://web.stanford.edu/class/cs224w">CS224W: Machine Learning with Graphs</a> / <a href="https://youtube.com/playlist?list=PL-Y8zK4dwCrQyASidb2mjj_itW2-YYx6-">Videos</a></p>
+</li>
+<li>
+<p><a href="https://gnn.seas.upenn.edu/">Graph Neural Networks - Penn Engineering</a></p>
+</li>
+<li>
+<p><a href="https://github.com/microsoft/tf-gnn-samples">TF Graph Neural Network Samples</a></p>
+</li>
+<li>
+<p><a href="https://github.com/microsoft/tf2-gnn">Graph Neural Networks in TF2</a></p>
+</li>
+<li>
+<p><a href="https://github.com/dsgiitr/graph_nets">Graph Representation Learning(Pytorch)</a></p>
+</li>
+<li>
+<p><a href="https://towardsdatascience.com/a-gentle-introduction-to-graph-neural-network-basics-deepwalk-and-graphsage-db5d540d50b3">A Gentle Introduction to Graph Neural Networks (Basics, DeepWalk, and GraphSage)</a></p>
+</li>
+<li>
+<p><a href="https://slideslive.com/38917604">Invariant Graph Networks</a> :  invariance, equivariance, k-WL GNN 관련 주제</p>
+</li>
+<li>
+<p><a href="https://ai.googleblog.com/2020/12/end-to-end-transferable-deep-rl-for.html">End-to-End, Transferable Deep RL for Graph Optimization</a> : RL + GNN</p>
+</li>
+</ul>
+<h3 id="Tutorials-&amp;-Workshops">
+<a class="anchor" href="#Tutorials-&amp;-Workshops" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tutorials &amp; Workshops<a class="anchor-link" href="#Tutorials-&amp;-Workshops"> </a>
+</h3>
+<ul>
+<li>
+<p><a href="http://snap.stanford.edu/proj/embeddings-www/">WWW 18 Tutorial : Representation Learning on Networks</a></p>
+</li>
+<li>
+<p><a href="http://shichuan.org/CIKM19_Tutorial.html">CIKM 19 Tutorial : Recent Developments of Deep Heterogeneous Information Network Analysis</a></p>
+</li>
+<li>
+<p><a href="https://next-nus.github.io/">WSDM 19 Tutorial : Learning and Reasoning on Graph for Recommendation</a></p>
+</li>
+<li>
+<p><a href="https://learningnets.github.io/KDD19_Tutorial/">KDD 19 Tutorial : Learning From Networks</a></p>
+</li>
+<li>
+<p><a href="http://cse.msu.edu/~mayao4/tutorials/aaai2020/">AAAI 20 Tutorial : Graph Neural Networks: Models and Applications</a></p>
+</li>
+<li>
+<p><a href="https://grlplus.github.io/">ICML2020 GNN Workshop GRL+</a></p>
+</li>
+<li>
+<p><a href="https://github.com/dglai/WWW20-Hands-on-Tutorial">WWW 20 Hands on Tutorial</a> - <a href="https://youtu.be/bD6S3xUXNds">Videos</a></p>
+</li>
+<li>
+<p><a href="https://github.com/svjan5/GNNs-for-NLP">Graph Neural Networks for Natural Language Processing</a> / <a href="https://shikhar-vashishth.github.io/assets/pdf/emnlp19_tutorial.pdf">PPT</a></p>
+</li>
+<li>
+<p><a href="http://www.ipam.ucla.edu/abstract/?tid=15786&amp;pcode=GLTUT">Tutorial on Spectral and Graph ConvNets</a></p>
+</li>
+</ul>
+<h3 id="Papers-&amp;-Survey">
+<a class="anchor" href="#Papers-&amp;-Survey" aria-hidden="true"><span class="octicon octicon-link"></span></a>Papers &amp; Survey<a class="anchor-link" href="#Papers-&amp;-Survey"> </a>
+</h3>
+<ul>
+<li>
+<p><a href="https://arxiv.org/abs/2012.08752">Graph Neural Networks: Taxonomy, Advances and Trends</a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/1901.00596.pdf">A Comprehensive Survey on Graph Neural Networks</a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/2010.02863">Directional Graph Networks</a></p>
+</li>
+<li>
+<p>GNN KR <a href="https://github.com/GNN-KR/paper_list">Paper List</a></p>
+</li>
+<li>
+<p><a href="https://zitniklab.hms.harvard.edu/projects/G-Meta/">Graph Meta Learning via Local Sub-graphs</a></p>
+<ul>
+<li>Meta-GNN: On Few-shot Node Classification in Graph Meta-learning</li>
+<li>Few-shot Learning with Graph Neural Networks</li>
+<li>Learning to Propagate for Graph Meta-Learning</li>
+</ul>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2006.02380v1.pdf">Self-supervised Training of Graph Convolutional Networks</a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2006.02587v1.pdf">XGNN: Towards Model-Level Explanations of Graph Neural Networks</a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2003.13606v5.pdf">L2-GCN: Layer-Wise and Learned Efficient Training of Graph Convolutional Networks, 2020 CVPR</a></p>
+</li>
+</ul>
+<h3 id="Videos">
+<a class="anchor" href="#Videos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Videos<a class="anchor-link" href="#Videos"> </a>
+</h3>
+<h4 id="An-Introduction-to-Graph-Neural-Networks:-Models-and-Applications">
+<a class="anchor" href="#An-Introduction-to-Graph-Neural-Networks:-Models-and-Applications" aria-hidden="true"><span class="octicon octicon-link"></span></a>An Introduction to Graph Neural Networks: Models and Applications<a class="anchor-link" href="#An-Introduction-to-Graph-Neural-Networks:-Models-and-Applications"> </a>
+</h4>
+<p>
+</p>
+<center class="youtube-iframe-wrapper">
+    <iframe width="730" height="315" src="https://www.youtube.com/embed/zCEYiCxrL_0" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+<h4 id="Graph-Convolutional-Networks-using-only-NumPy">
+<a class="anchor" href="#Graph-Convolutional-Networks-using-only-NumPy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Graph Convolutional Networks using only NumPy<a class="anchor-link" href="#Graph-Convolutional-Networks-using-only-NumPy"> </a>
+</h4>
+<p>
+</p>
+<center class="youtube-iframe-wrapper">
+    <iframe width="730" height="315" src="https://www.youtube.com/embed/8qTnNXdkF1Q" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+<h4 id="Geometric-Deep-Learning-on-Graphs-and-Manifolds">
+<a class="anchor" href="#Geometric-Deep-Learning-on-Graphs-and-Manifolds" aria-hidden="true"><span class="octicon octicon-link"></span></a>Geometric Deep Learning on Graphs and Manifolds<a class="anchor-link" href="#Geometric-Deep-Learning-on-Graphs-and-Manifolds"> </a>
+</h4>
+<p>
+</p>
+<center class="youtube-iframe-wrapper">
+    <iframe width="730" height="315" src="https://www.youtube.com/embed/LvmjbXZyoP0" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+<h4 id="Graph-Nets:-The-Next-Generation">
+<a class="anchor" href="#Graph-Nets:-The-Next-Generation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Graph Nets: The Next Generation<a class="anchor-link" href="#Graph-Nets:-The-Next-Generation"> </a>
+</h4>
+<ul>
+<li>
+<a href="https://www.ias.edu/video/machinelearning/2020/0721-MaxWelling">Link</a>
+
+<center class="youtube-iframe-wrapper">
+    <iframe width="730" height="315" src="https://www.youtube.com/embed/Wx8J-Kw3fTA" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+#### Recent Developments of Graph Network Architectures</li>
+<li><a href="https://rb.gy/quo3n6">Slide</a></li>
+<li>2019-2020에 발표된 GNN 방법론들을 정리</li>
+<li>GNN의 expressiveness, 그중에서도 invariance and equvariance
+
+<center class="youtube-iframe-wrapper">
+    <iframe width="730" height="315" src="https://www.youtube.com/embed/M60huxIvKbE" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+#### Deep learning on graphs: successes, challenges, and next steps
+
+<center class="youtube-iframe-wrapper">
+    <iframe width="730" height="315" src="https://www.youtube.com/embed/PLGcx65MhCc" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+#### Graph Representation Learning for Algorithmic Reasoning</li>
+<li>
+<a href="https://petar-v.com/talks/Algo-WWW.pdf">Slide</a>
+
+<center class="youtube-iframe-wrapper">
+    <iframe width="730" height="315" src="https://www.youtube.com/embed/IPQ6CPoluok" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+#### How Uber uses Graph Neural Networks to recommend you food</li>
+<li>
+<a href="https://eng.uber.com/uber-eats-graph-learning/">Post</a>
+
+<center class="youtube-iframe-wrapper">
+    <iframe width="730" height="315" src="https://www.youtube.com/embed/9O9osybNvyY" frameborder="0" allowfullscreen=""></iframe>
+</center>
+</li>
 </ul>
 
-<h3 id="tutorials--workshops">
-<a class="anchor" href="#tutorials--workshops" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tutorials &amp; Workshops</h3>
-
-<ul>
-  <li>
-    <p><a href="http://snap.stanford.edu/proj/embeddings-www/">WWW 18 Tutorial : Representation Learning on Networks</a></p>
-  </li>
-  <li>
-    <p><a href="http://shichuan.org/CIKM19_Tutorial.html">CIKM 19 Tutorial : Recent Developments of Deep Heterogeneous Information Network Analysis</a></p>
-  </li>
-  <li>
-    <p><a href="https://next-nus.github.io/">WSDM 19 Tutorial : Learning and Reasoning on Graph for Recommendation</a></p>
-  </li>
-  <li>
-    <p><a href="https://learningnets.github.io/KDD19_Tutorial/">KDD 19 Tutorial : Learning From Networks</a></p>
-  </li>
-  <li>
-    <p><a href="http://cse.msu.edu/~mayao4/tutorials/aaai2020/">AAAI 20 Tutorial : Graph Neural Networks: Models and Applications</a></p>
-  </li>
-  <li>
-    <p><a href="https://grlplus.github.io/">ICML2020 GNN Workshop GRL+</a></p>
-  </li>
-  <li>
-    <p><a href="https://github.com/dglai/WWW20-Hands-on-Tutorial">WWW 20 Hands on Tutorial</a> - <a href="https://youtu.be/bD6S3xUXNds">Videos</a></p>
-  </li>
-  <li>
-    <p><a href="https://github.com/svjan5/GNNs-for-NLP">Graph Neural Networks for Natural Language Processing</a> / <a href="https://shikhar-vashishth.github.io/assets/pdf/emnlp19_tutorial.pdf">PPT</a></p>
-  </li>
-  <li>
-    <p><a href="http://www.ipam.ucla.edu/abstract/?tid=15786&amp;pcode=GLTUT">Tutorial on Spectral and Graph ConvNets</a></p>
-  </li>
-</ul>
-
-<h3 id="papers--survey">
-<a class="anchor" href="#papers--survey" aria-hidden="true"><span class="octicon octicon-link"></span></a>Papers &amp; Survey</h3>
-<ul>
-  <li>
-    <p><a href="https://arxiv.org/abs/2012.08752">Graph Neural Networks: Taxonomy, Advances and Trends</a></p>
-  </li>
-  <li>
-    <p><a href="https://arxiv.org/pdf/1901.00596.pdf">A Comprehensive Survey on Graph Neural Networks</a></p>
-  </li>
-  <li>
-    <p><a href="https://arxiv.org/abs/2010.02863">Directional Graph Networks</a></p>
-  </li>
-  <li>
-    <p>GNN KR <a href="https://github.com/GNN-KR/paper_list">Paper List</a></p>
-  </li>
-  <li>
-<a href="https://zitniklab.hms.harvard.edu/projects/G-Meta/">Graph Meta Learning via Local Sub-graphs</a>
-    <ul>
-      <li>Meta-GNN: On Few-shot Node Classification in Graph Meta-learning</li>
-      <li>Few-shot Learning with Graph Neural Networks</li>
-      <li>Learning to Propagate for Graph Meta-Learning</li>
-    </ul>
-  </li>
-  <li>
-    <p><a href="https://arxiv.org/pdf/2006.02380v1.pdf">Self-supervised Training of Graph Convolutional Networks</a></p>
-  </li>
-  <li>
-    <p><a href="https://arxiv.org/pdf/2006.02587v1.pdf">XGNN: Towards Model-Level Explanations of Graph Neural Networks</a></p>
-  </li>
-  <li><a href="https://arxiv.org/pdf/2003.13606v5.pdf">L2-GCN: Layer-Wise and Learned Efficient Training of Graph Convolutional Networks, 2020 CVPR</a></li>
-</ul>
-
-<h3 id="videos">
-<a class="anchor" href="#videos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Videos</h3>
-
-<h4 id="an-introduction-to-graph-neural-networks-models-and-applications">
-<a class="anchor" href="#an-introduction-to-graph-neural-networks-models-and-applications" aria-hidden="true"><span class="octicon octicon-link"></span></a>An Introduction to Graph Neural Networks: Models and Applications</h4>
-
-<h4 id="graph-convolutional-networks-using-only-numpy">
-<a class="anchor" href="#graph-convolutional-networks-using-only-numpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Graph Convolutional Networks using only NumPy</h4>
-
-<h4 id="geometric-deep-learning-on-graphs-and-manifolds">
-<a class="anchor" href="#geometric-deep-learning-on-graphs-and-manifolds" aria-hidden="true"><span class="octicon octicon-link"></span></a>Geometric Deep Learning on Graphs and Manifolds</h4>
-
-<h4 id="graph-nets-the-next-generation">
-<a class="anchor" href="#graph-nets-the-next-generation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Graph Nets: The Next Generation</h4>
-<ul>
-  <li><a href="https://www.ias.edu/video/machinelearning/2020/0721-MaxWelling">Link</a></li>
-</ul>
-
-<h4 id="recent-developments-of-graph-network-architectures">
-<a class="anchor" href="#recent-developments-of-graph-network-architectures" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recent Developments of Graph Network Architectures</h4>
-<ul>
-  <li><a href="https://rb.gy/quo3n6">Slide</a></li>
-  <li>2019-2020에 발표된 GNN 방법론들을 정리</li>
-  <li>GNN의 expressiveness, 그중에서도 invariance and equvariance</li>
-</ul>
-
-<h4 id="deep-learning-on-graphs-successes-challenges-and-next-steps">
-<a class="anchor" href="#deep-learning-on-graphs-successes-challenges-and-next-steps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deep learning on graphs: successes, challenges, and next steps</h4>
-
-<h4 id="graph-representation-learning-for-algorithmic-reasoning">
-<a class="anchor" href="#graph-representation-learning-for-algorithmic-reasoning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Graph Representation Learning for Algorithmic Reasoning</h4>
-<ul>
-  <li><a href="https://petar-v.com/talks/Algo-WWW.pdf">Slide</a></li>
-</ul>
-
-<h4 id="how-uber-uses-graph-neural-networks-to-recommend-you-food">
-<a class="anchor" href="#how-uber-uses-graph-neural-networks-to-recommend-you-food" aria-hidden="true"><span class="octicon octicon-link"></span></a>How Uber uses Graph Neural Networks to recommend you food</h4>
-<ul>
-  <li><a href="https://eng.uber.com/uber-eats-graph-learning/">Post</a></li>
-</ul>
+</div>
+</div>
+</div>
+</div>
 
 
-  </div><a class="u-url" href="/blog/gnn/2021/01/02/gnn-introduction.html" hidden></a>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="curieuxjy/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/gnn/2021/01/02/gnn-introduction.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
